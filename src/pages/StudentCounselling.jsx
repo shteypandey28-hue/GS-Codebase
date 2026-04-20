@@ -40,7 +40,7 @@ export default function StudentCounselling() {
       <HeroBanner
         title="Student Counselling"
         subtitle="Empowering the Next Generation"
-        image="https://ganeshsoni.com/wp-content/uploads/2025/09/Untitled-design-4-1024x576.jpg"
+        image="/images/student-counselling.jpg"
         accentColor="violet"
       />
       <FeedbackList items={content} />

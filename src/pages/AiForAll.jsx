@@ -73,7 +73,7 @@ export default function AiForAll() {
       <HeroBanner
         title="AI for ALL"
         subtitle="Democratizing Artificial Intelligence"
-        image="https://ganeshsoni.com/wp-content/uploads/slider/cache/bc5e78cfd3a6bd978dd65d0753de283d/AI-for-All-scaled.jpg"
+        image="/images/ai-for-all.jpg"
         accentColor="electric"
       />
       <FeedbackList items={content} />

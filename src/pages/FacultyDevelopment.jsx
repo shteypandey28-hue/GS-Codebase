@@ -73,7 +73,7 @@ export default function FacultyDevelopment() {
       <HeroBanner
         title="Faculty Development"
         subtitle="Institutional Advisory & Training"
-        image="https://ganeshsoni.com/wp-content/uploads/slider/cache/9ec794796ca16d546e553ff44a17be9e/External-Viva-4.jpg"
+        image="/images/faculty-dev.jpg"
         accentColor="flame"
       />
       <FeedbackList items={content} />

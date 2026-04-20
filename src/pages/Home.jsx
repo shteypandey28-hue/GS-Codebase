@@ -14,7 +14,7 @@ const fadeUp = {
 const services = [
   {
     title: 'Faculty Development',
-    img: 'https://ganeshsoni.com/wp-content/uploads/slider/cache/9ec794796ca16d546e553ff44a17be9e/External-Viva-4.jpg',
+    img: '/images/faculty-dev.jpg',
     desc: 'Comprehensive training programs that transform teaching methodologies, integrate modern pedagogy, and elevate institutional academic standards.',
     link: '/faculty-development',
     color: 'flame',
@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: 'AI for All',
-    img: 'https://ganeshsoni.com/wp-content/uploads/slider/cache/bc5e78cfd3a6bd978dd65d0753de283d/AI-for-All-scaled.jpg',
+    img: '/images/ai-for-all.jpg',
     desc: 'Demystifying artificial intelligence for educators, HR professionals, and students — making cutting-edge AI tools accessible to everyone.',
     link: '/ai-for-all',
     color: 'electric',
@@ -32,7 +32,7 @@ const services = [
   },
   {
     title: 'Career Guidance',
-    img: 'https://ganeshsoni.com/wp-content/uploads/slider/cache/fdce1e7fdda43d3e559dd543eb116e8c/Career-Guidance-scaled.jpg',
+    img: '/images/career-guidance.jpg',
     desc: 'From crafting standout resumes to mastering technical interviews — strategic career coaching that opens doors to opportunities.',
     link: '/career-guidance',
     color: 'magenta',
@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Student Counselling",
-    img: 'https://ganeshsoni.com/wp-content/uploads/2025/09/Untitled-design-4-1024x576.jpg',
+    img: '/images/student-counselling.jpg',
     desc: 'Helping young minds discover their purpose through Ikigai, dream mapping, and personalized mentoring for academic and emotional growth.',
     link: '/students-counselling',
     color: 'violet',
@@ -73,7 +73,7 @@ export default function Home() {
         {/* Hero background */}
         <motion.div style={{ y: heroY }} className="absolute inset-0 z-0 h-[130%]">
           <img
-            src="https://ganeshsoni.com/wp-content/uploads/2025/09/Untitled-design-1.jpg"
+            src="/images/hero-bg.jpg"
             alt="Background"
             className="w-full h-full object-cover opacity-[0.06]"
           />
@@ -144,7 +144,7 @@ export default function Home() {
 
               <div className="relative rounded-2xl overflow-hidden border border-border">
                 <img
-                  src="https://ganeshsoni.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-08-at-20.30.41.jpeg"
+                  src="/images/profile.jpg"
                   className="w-full h-[550px] object-cover"
                   alt="Ganesh Soni"
                 />
@@ -242,7 +242,7 @@ export default function Home() {
             {/* Image 1 */}
             <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px]">
               <img
-                src="https://ganeshsoni.com/wp-content/uploads/2025/09/Untitled-design-2.jpg"
+                src="/images/speaking.jpg"
                 alt="Speaking"
                 className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50 group-hover:opacity-70"
               />
@@ -255,7 +255,7 @@ export default function Home() {
             {/* Image 2 */}
             <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px]">
               <img
-                src="https://ganeshsoni.com/wp-content/uploads/2025/09/Untitled-design-3-1024x576.jpg"
+                src="/images/mentorship.jpg"
                 alt="Mentorship"
                 className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50 group-hover:opacity-70"
               />

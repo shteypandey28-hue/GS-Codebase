@@ -64,7 +64,7 @@ export default function CareerGuidance() {
       <HeroBanner
         title="Career Guidance"
         subtitle="Strategic Career Coaching & Mentorship"
-        image="https://ganeshsoni.com/wp-content/uploads/slider/cache/fdce1e7fdda43d3e559dd543eb116e8c/Career-Guidance-scaled.jpg"
+        image="/images/career-guidance.jpg"
         accentColor="magenta"
       />
       <FeedbackList items={content} />
