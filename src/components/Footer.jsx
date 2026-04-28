@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Globe, ExternalLink, MessageCircle, Mail, Phone, MapPin, Sparkles } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   const services = [
     { label: 'Faculty Development', href: '/faculty-development' },
@@ -20,7 +23,8 @@ export default function Footer() {
 
   return (
     <footer className="relative z-10 border-t border-border overflow-hidden bg-bg-deep">
-      {/* CTA Section */}
+      {/* CTA Section — only on Home page */}
+      {isHome && (
       <div className="relative py-28 px-6 sm:px-16 text-center overflow-hidden">
         <div className="absolute inset-0 opacity-[0.06]" style={{ background: 'radial-gradient(ellipse at center, var(--color-flame), transparent 60%)' }}></div>
         <motion.div
@@ -51,6 +55,7 @@ export default function Footer() {
           </a>
         </motion.div>
       </div>
+      )}
 
       {/* Footer Grid */}
       <div className="border-t border-border">
@@ -66,7 +71,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-3">
               {[
-                { icon: <Globe className="w-4 h-4" />, href: 'https://www.linkedin.com', color: 'hover:text-electric hover:border-electric/30 hover:bg-electric/10' },
+                { icon: <Globe className="w-4 h-4" />, href: 'https://www.linkedin.com/in/ganeshsoni/', color: 'hover:text-electric hover:border-electric/30 hover:bg-electric/10' },
                 { icon: <ExternalLink className="w-4 h-4" />, href: 'https://www.instagram.com', color: 'hover:text-magenta hover:border-magenta/30 hover:bg-magenta/10' },
                 { icon: <MessageCircle className="w-4 h-4" />, href: 'https://wa.me/918806414646', color: 'hover:text-lime hover:border-lime/30 hover:bg-lime/10' },
                 { icon: <Mail className="w-4 h-4" />, href: 'mailto:ganeshsoni123@gmail.com', color: 'hover:text-flame hover:border-flame/30 hover:bg-flame/10' },
