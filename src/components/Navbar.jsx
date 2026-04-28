@@ -79,17 +79,25 @@ export default function Navbar() {
                   className="absolute top-full -left-4 pt-3 min-w-[260px]"
                 >
                   <div className="glass rounded-xl overflow-hidden shadow-2xl shadow-black/10">
-                    {expertiseLinks.map((link, i) => (
-                      <Link
-                        key={i}
-                        to={link.to}
-                        className={`block px-6 py-4 text-text-secondary hover:text-text-primary hover:bg-black/5 transition-all duration-200 ${
-                          i > 0 ? 'border-t border-black/5' : ''
-                        } ${location.pathname === link.to ? 'text-flame bg-black/5' : ''}`}
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
+                    {expertiseLinks.map((link, i) => {
+                      const colors = [
+                        'hover:text-flame hover:bg-flame/5 hover:border-l-flame',
+                        'hover:text-electric hover:bg-electric/5 hover:border-l-electric',
+                        'hover:text-magenta hover:bg-magenta/5 hover:border-l-magenta',
+                        'hover:text-violet hover:bg-violet/5 hover:border-l-violet',
+                      ];
+                      return (
+                        <Link
+                          key={i}
+                          to={link.to}
+                          className={`block px-6 py-4 text-text-secondary border-l-3 border-l-transparent transition-all duration-200 ${
+                            i > 0 ? 'border-t border-black/5' : ''
+                          } ${location.pathname === link.to ? 'text-flame bg-flame/5 border-l-flame' : ''} ${colors[i]}`}
+                        >
+                          {link.label}
+                        </Link>
+                      );
+                    })}
                   </div>
                 </motion.div>
               )}

@@ -104,7 +104,7 @@ export default function Home() {
               <span className="text-flame">.</span>
             </motion.h1>
 
-            <motion.p variants={fadeUp} className="text-lg text-text-secondary font-light mb-10 max-w-lg leading-relaxed">
+            <motion.p variants={fadeUp} className="text-lg text-text-secondary mb-10 max-w-lg leading-relaxed">
               With 15+ years of industry expertise, I help institutions modernize their teaching, professionals accelerate their careers, and students find their true calling.
             </motion.p>
 
@@ -234,7 +234,7 @@ export default function Home() {
             <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, rgba(255,107,53,0.08), rgba(233,30,140,0.05))' }}>
               <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.08] blur-3xl group-hover:opacity-[0.15] transition-opacity duration-700" style={{ background: 'var(--color-flame)' }}></div>
               <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">Strategic Vision</h3>
-              <p className="text-text-secondary font-light text-lg leading-relaxed max-w-xl">
+              <p className="text-text-secondary text-lg leading-relaxed max-w-xl">
                 I don't just solve today's challenges — I architect transformative systems for lasting impact. Whether it's integrating AI into academic curriculums or reshaping corporate training, every strategy is designed for sustainable growth and measurable outcomes.
               </p>
             </motion.div>
@@ -271,7 +271,7 @@ export default function Home() {
               <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">
                 Where Academia Meets Industry
               </h3>
-              <p className="text-text-secondary font-light text-lg leading-relaxed max-w-xl">
+              <p className="text-text-secondary text-lg leading-relaxed max-w-xl">
                 Bridging theoretical academia with rigorous industry execution. My frameworks are built on 15+ years of deep research and real-world deployment across top institutions and enterprises — delivering results that matter.
               </p>
             </motion.div>
@@ -328,7 +328,7 @@ export default function Home() {
                   {/* Content */}
                   <div className="p-7 flex flex-col flex-grow">
                     <h3 className="font-display text-xl font-bold text-text-primary mb-3">{service.title}</h3>
-                    <p className="text-sm text-text-secondary font-light leading-relaxed flex-grow">{service.desc}</p>
+                    <p className="text-sm text-text-secondary leading-relaxed flex-grow">{service.desc}</p>
                     <div className={`mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-${service.color} group-hover:gap-3 transition-all duration-300`}>
                       Explore
                       <ArrowRight className="w-3.5 h-3.5" />
