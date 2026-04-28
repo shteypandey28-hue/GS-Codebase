@@ -41,7 +41,6 @@ export default function HeroBanner({ title, subtitle, image, accentColor = 'flam
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary tracking-tight leading-[1.05]">
             {title}
-            <span className="gradient-text-vibrant">.</span>
           </h1>
         </motion.div>
       </div>

@@ -105,7 +105,6 @@ export default function Home() {
               <span className="gradient-text-vibrant">Careers</span>
               <br />& Shaping{' '}
               <span className="gradient-text-cool">Futures</span>
-              <span className="text-flame">.</span>
             </motion.h1>
 
             <motion.p variants={fadeUp} className="text-lg text-text-secondary mb-10 max-w-lg leading-relaxed">
@@ -229,7 +228,6 @@ export default function Home() {
             <motion.h2 variants={fadeUp} className="font-display text-4xl lg:text-5xl font-bold text-text-primary">
               The Architecture of{' '}
               <span className="gradient-text-cool">Impact</span>
-              <span className="text-magenta">.</span>
             </motion.h2>
           </div>
 
@@ -298,7 +296,6 @@ export default function Home() {
             <motion.h2 variants={fadeUp} className="font-display text-4xl lg:text-5xl font-bold text-text-primary">
               Core{' '}
               <span className="gradient-text-warm">Expertise</span>
-              <span className="text-flame">.</span>
             </motion.h2>
           </div>
 
