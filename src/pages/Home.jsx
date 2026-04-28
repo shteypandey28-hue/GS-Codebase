@@ -13,15 +13,6 @@ const fadeUp = {
 
 const services = [
   {
-    title: 'Faculty Development',
-    img: '/images/faculty-dev.jpg',
-    desc: 'Comprehensive training programs that transform teaching methodologies, integrate modern pedagogy, and elevate institutional academic standards.',
-    link: '/faculty-development',
-    color: 'flame',
-    icon: <GraduationCap className="w-6 h-6" />,
-    gradient: 'from-flame/20 to-transparent',
-  },
-  {
     title: 'AI for All',
     img: '/images/ai-for-all.jpg',
     desc: 'Demystifying artificial intelligence for educators, HR professionals, and students — making cutting-edge AI tools accessible to everyone.',
@@ -38,6 +29,15 @@ const services = [
     color: 'magenta',
     icon: <Compass className="w-6 h-6" />,
     gradient: 'from-magenta/20 to-transparent',
+  },
+  {
+    title: 'Faculty Development',
+    img: '/images/faculty-dev.jpg',
+    desc: 'Comprehensive training programs that transform teaching methodologies, integrate modern pedagogy, and elevate institutional academic standards.',
+    link: '/faculty-development',
+    color: 'flame',
+    icon: <GraduationCap className="w-6 h-6" />,
+    gradient: 'from-flame/20 to-transparent',
   },
   {
     title: "Student Counselling",
