@@ -80,8 +80,8 @@ export default function Home() {
         </motion.div>
 
         {/* Vibrant orb effects */}
-        <div className="absolute top-20 right-[10%] w-[500px] h-[500px] rounded-full opacity-[0.07] blur-3xl" style={{ background: 'var(--color-flame)' }}></div>
-        <div className="absolute bottom-20 left-[5%] w-[400px] h-[400px] rounded-full opacity-[0.05] blur-3xl" style={{ background: 'var(--color-magenta)' }}></div>
+        <div className="absolute top-20 right-[10%] w-[500px] h-[500px] rounded-full opacity-[0.08] blur-3xl" style={{ background: 'var(--color-flame)' }}></div>
+        <div className="absolute bottom-20 left-[5%] w-[400px] h-[400px] rounded-full opacity-[0.06] blur-3xl" style={{ background: 'var(--color-magenta)' }}></div>
 
         <motion.div
           variants={staggerContainer}
@@ -140,7 +140,7 @@ export default function Home() {
           <motion.div variants={fadeUp} className="relative hidden lg:block">
             <div className="relative">
               {/* Gradient border glow */}
-              <div className="absolute -inset-1 rounded-2xl opacity-40 blur-lg" style={{ background: 'linear-gradient(135deg, var(--color-flame), var(--color-magenta), var(--color-electric))' }}></div>
+              <div className="absolute -inset-1 rounded-2xl opacity-30 blur-lg" style={{ background: 'linear-gradient(135deg, var(--color-flame), var(--color-magenta), var(--color-electric))' }}></div>
 
               <div className="relative rounded-2xl overflow-hidden border border-border">
                 <img
@@ -148,7 +148,7 @@ export default function Home() {
                   className="w-full h-[550px] object-cover"
                   alt="Ganesh Soni"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg-dark via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
 
                 {/* Floating badge */}
                 <motion.div
@@ -232,7 +232,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-5">
             {/* Strategic Vision */}
             <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, rgba(255,107,53,0.08), rgba(233,30,140,0.05))' }}>
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-10 blur-3xl group-hover:opacity-20 transition-opacity duration-700" style={{ background: 'var(--color-flame)' }}></div>
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.08] blur-3xl group-hover:opacity-[0.15] transition-opacity duration-700" style={{ background: 'var(--color-flame)' }}></div>
               <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">Strategic Vision</h3>
               <p className="text-text-secondary font-light text-lg leading-relaxed max-w-xl">
                 I don't just solve today's challenges — I architect transformative systems for lasting impact. Whether it's integrating AI into academic curriculums or reshaping corporate training, every strategy is designed for sustainable growth and measurable outcomes.
@@ -246,7 +246,7 @@ export default function Home() {
                 alt="Speaking"
                 className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50 group-hover:opacity-70"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-dark/80 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent"></div>
               <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-text-primary">
                 Public Speaking
               </div>
@@ -259,7 +259,7 @@ export default function Home() {
                 alt="Mentorship"
                 className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50 group-hover:opacity-70"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-dark/80 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent"></div>
               <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-text-primary">
                 Mentorship
               </div>
@@ -267,7 +267,7 @@ export default function Home() {
 
             {/* Academic + Industry */}
             <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group glass-light">
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-10 blur-3xl group-hover:opacity-20 transition-opacity duration-700" style={{ background: 'var(--color-electric)' }}></div>
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.08] blur-3xl group-hover:opacity-[0.15] transition-opacity duration-700" style={{ background: 'var(--color-electric)' }}></div>
               <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">
                 Where Academia Meets Industry
               </h3>
@@ -305,7 +305,7 @@ export default function Home() {
               <motion.div variants={fadeUp} key={i}>
                 <Link
                   to={service.link}
-                  className="block group rounded-2xl border border-border bg-surface overflow-hidden hover:-translate-y-2 transition-all duration-500 h-full flex flex-col relative"
+                  className="block group rounded-2xl border border-border bg-white overflow-hidden hover:-translate-y-2 hover:shadow-xl hover:shadow-black/5 transition-all duration-500 h-full flex flex-col relative"
                 >
                   {/* Image */}
                   <div className="h-52 overflow-hidden relative">

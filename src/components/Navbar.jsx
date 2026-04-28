@@ -35,7 +35,7 @@ export default function Navbar() {
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out border-b ${
         scrolled
-          ? 'py-3 px-6 md:px-10 backdrop-blur-2xl bg-bg-dark/90 border-border shadow-lg shadow-black/20'
+          ? 'py-3 px-6 md:px-10 backdrop-blur-2xl bg-bg-dark/90 border-border shadow-lg shadow-black/5'
           : 'py-5 px-6 md:px-10 bg-transparent border-transparent'
       }`}
     >
@@ -78,14 +78,14 @@ export default function Navbar() {
                   transition={{ duration: 0.2 }}
                   className="absolute top-full -left-4 pt-3 min-w-[260px]"
                 >
-                  <div className="glass rounded-xl overflow-hidden shadow-2xl shadow-black/40">
+                  <div className="glass rounded-xl overflow-hidden shadow-2xl shadow-black/10">
                     {expertiseLinks.map((link, i) => (
                       <Link
                         key={i}
                         to={link.to}
-                        className={`block px-6 py-4 text-text-secondary hover:text-text-primary hover:bg-white/5 transition-all duration-200 ${
-                          i > 0 ? 'border-t border-white/5' : ''
-                        } ${location.pathname === link.to ? 'text-flame bg-white/5' : ''}`}
+                        className={`block px-6 py-4 text-text-secondary hover:text-text-primary hover:bg-black/5 transition-all duration-200 ${
+                          i > 0 ? 'border-t border-black/5' : ''
+                        } ${location.pathname === link.to ? 'text-flame bg-black/5' : ''}`}
                       >
                         {link.label}
                       </Link>

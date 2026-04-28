@@ -24,7 +24,7 @@ export default function HeroBanner({ title, subtitle, image, accentColor = 'flam
           alt={title}
           className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-bg-dark/60"></div>
+        <div className="absolute inset-0 bg-bg-dark/40"></div>
         <div className={`absolute inset-0 bg-gradient-to-b ${gradientMap[accentColor] || gradientMap.flame}`}></div>
       </motion.div>
 

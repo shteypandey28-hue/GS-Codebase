@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Globe, ExternalLink, Mail, Phone, MapPin, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Globe, ExternalLink, MessageCircle, Mail, Phone, MapPin, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,7 +19,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative z-10 border-t border-border overflow-hidden">
+    <footer className="relative z-10 border-t border-border overflow-hidden bg-bg-deep">
       {/* CTA Section */}
       <div className="relative py-28 px-6 sm:px-16 text-center overflow-hidden">
         <div className="absolute inset-0 opacity-[0.06]" style={{ background: 'radial-gradient(ellipse at center, var(--color-flame), transparent 60%)' }}></div>
@@ -68,6 +68,7 @@ export default function Footer() {
               {[
                 { icon: <Globe className="w-4 h-4" />, href: 'https://www.linkedin.com', color: 'hover:text-electric hover:border-electric/30 hover:bg-electric/10' },
                 { icon: <ExternalLink className="w-4 h-4" />, href: 'https://www.instagram.com', color: 'hover:text-magenta hover:border-magenta/30 hover:bg-magenta/10' },
+                { icon: <MessageCircle className="w-4 h-4" />, href: 'https://wa.me/918806414646', color: 'hover:text-lime hover:border-lime/30 hover:bg-lime/10' },
                 { icon: <Mail className="w-4 h-4" />, href: 'mailto:ganeshsoni123@gmail.com', color: 'hover:text-flame hover:border-flame/30 hover:bg-flame/10' },
               ].map((social, i) => (
                 <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" className={`w-9 h-9 rounded-full border border-border flex items-center justify-center text-text-dim transition-all duration-300 ${social.color}`}>
