@@ -93,7 +93,11 @@ export default function Home() {
           <div className="max-w-2xl">
             <motion.div variants={fadeUp} className="inline-flex items-center gap-3 px-4 py-2 rounded-full glass text-xs uppercase tracking-[0.2em] font-bold mb-8 text-text-secondary">
               <Sparkles className="w-3.5 h-3.5 text-flame" />
-              Educator · Speaker · AI Evangelist
+              <span className="hover-gradient-vibrant cursor-default">Educator</span>
+              <span className="opacity-50">·</span>
+              <span className="hover-gradient-vibrant cursor-default">Speaker</span>
+              <span className="opacity-50">·</span>
+              <span className="hover-gradient-vibrant cursor-default">AI Evangelist</span>
             </motion.div>
 
             <motion.h1 variants={fadeUp} className="font-display text-5xl md:text-6xl xl:text-7xl font-bold leading-[1.08] text-text-primary mb-8">

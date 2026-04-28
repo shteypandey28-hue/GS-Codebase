@@ -73,6 +73,17 @@ body {
   background-clip: text;
 }
 
+.hover-gradient-vibrant {
+  transition: all 0.3s ease;
+}
+
+.hover-gradient-vibrant:hover {
+  background: linear-gradient(135deg, var(--color-flame), var(--color-magenta), var(--color-electric));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .gradient-text-cool {
   background: linear-gradient(135deg, var(--color-electric), var(--color-violet), var(--color-magenta));
   -webkit-background-clip: text;
