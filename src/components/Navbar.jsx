@@ -104,7 +104,7 @@ export default function Navbar() {
             </AnimatePresence>
           </div>
 
-          <a href="#about" className="hover:text-electric transition-colors duration-300">
+          <a href="#about" className="text-text-primary hover:text-electric transition-colors duration-300">
             About
           </a>
         </div>

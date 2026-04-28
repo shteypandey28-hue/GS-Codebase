@@ -310,7 +310,7 @@ export default function Home() {
                     <img
                       src={service.img}
                       alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-70 group-hover:opacity-90"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient}`}></div>
 
@@ -326,7 +326,7 @@ export default function Home() {
                   {/* Content */}
                   <div className="p-7 flex flex-col flex-grow">
                     <h3 className="font-display text-xl font-bold text-text-primary mb-3">{service.title}</h3>
-                    <p className="text-sm text-text-secondary leading-relaxed flex-grow">{service.desc}</p>
+                    <p className="text-sm text-text-primary/80 leading-relaxed flex-grow">{service.desc}</p>
                     <div className={`mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-${service.color} group-hover:gap-3 transition-all duration-300`}>
                       Explore
                       <ArrowRight className="w-3.5 h-3.5" />
