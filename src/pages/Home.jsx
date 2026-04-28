@@ -231,43 +231,41 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-5">
             {/* Strategic Vision */}
-            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, rgba(255,107,53,0.08), rgba(233,30,140,0.05))' }}>
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.08] blur-3xl group-hover:opacity-[0.15] transition-opacity duration-700" style={{ background: 'var(--color-flame)' }}></div>
+            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group border border-border shadow-sm" style={{ background: 'linear-gradient(135deg, rgba(255,107,53,0.12), rgba(233,30,140,0.08))' }}>
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.15] blur-3xl group-hover:opacity-[0.25] transition-opacity duration-700" style={{ background: 'var(--color-flame)' }}></div>
               <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">Strategic Vision</h3>
               <p className="text-text-secondary text-lg leading-relaxed max-w-xl">
                 I don't just solve today's challenges — I architect transformative systems for lasting impact. Whether it's integrating AI into academic curriculums or reshaping corporate training, every strategy is designed for sustainable growth and measurable outcomes.
               </p>
             </motion.div>
 
-            {/* Image 1 */}
-            <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px]">
+            <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px] shadow-md">
               <img
                 src="/images/speaking.jpg"
                 alt="Speaking"
-                className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50 group-hover:opacity-70"
+                className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-text-primary">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-white">
                 Public Speaking
               </div>
             </motion.div>
 
-            {/* Image 2 */}
-            <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px]">
+            <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px] shadow-md">
               <img
                 src="/images/mentorship.jpg"
                 alt="Mentorship"
-                className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-50 group-hover:opacity-70"
+                className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-white/90 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-text-primary">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-white">
                 Mentorship
               </div>
             </motion.div>
 
             {/* Academic + Industry */}
-            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group glass-light">
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.08] blur-3xl group-hover:opacity-[0.15] transition-opacity duration-700" style={{ background: 'var(--color-electric)' }}></div>
+            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group border border-border shadow-sm" style={{ background: 'linear-gradient(135deg, rgba(0,180,216,0.08), rgba(139,92,246,0.06))' }}>
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.15] blur-3xl group-hover:opacity-[0.25] transition-opacity duration-700" style={{ background: 'var(--color-electric)' }}></div>
               <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">
                 Where Academia Meets Industry
               </h3>
