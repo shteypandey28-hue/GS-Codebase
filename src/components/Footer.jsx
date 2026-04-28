@@ -66,7 +66,7 @@ export default function Footer() {
               <span className="gradient-text-vibrant">G</span>anesh
               <span className="gradient-text-vibrant">S</span>oni
             </div>
-            <p className="text-text-secondary text-sm leading-relaxed mb-6">
+            <p className="text-text-primary/80 text-sm leading-relaxed mb-6">
               Empowering institutions, professionals, and dreamers to unlock their full potential through transformative education and guidance.
             </p>
             <div className="flex gap-3">
@@ -76,7 +76,7 @@ export default function Footer() {
                 { icon: <MessageCircle className="w-4 h-4" />, href: 'https://wa.me/918806414646', color: 'hover:text-lime hover:border-lime/30 hover:bg-lime/10' },
                 { icon: <Mail className="w-4 h-4" />, href: 'mailto:ganeshsoni123@gmail.com', color: 'hover:text-flame hover:border-flame/30 hover:bg-flame/10' },
               ].map((social, i) => (
-                <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" className={`w-9 h-9 rounded-full border border-border flex items-center justify-center text-text-dim transition-all duration-300 ${social.color}`}>
+                <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" className={`w-9 h-9 rounded-full border border-border flex items-center justify-center text-text-primary/80 transition-all duration-300 ${social.color}`}>
                   {social.icon}
                 </a>
               ))}
@@ -89,7 +89,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, i) => (
                 <li key={i}>
-                  <a href={link.href} className="text-text-secondary hover:text-flame transition-colors duration-300 text-sm flex items-center gap-2 group">
+                  <a href={link.href} className="text-text-primary hover:text-flame transition-colors duration-300 text-sm flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-flame/30 group-hover:bg-flame transition-colors duration-300"></span>
                     {link.label}
                   </a>
@@ -104,7 +104,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map((service, i) => (
                 <li key={i}>
-                  <a href={service.href} className="text-text-secondary hover:text-magenta transition-colors duration-300 text-sm flex items-center gap-2 group">
+                  <a href={service.href} className="text-text-primary hover:text-magenta transition-colors duration-300 text-sm flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 rounded-full bg-magenta/30 group-hover:bg-magenta transition-colors duration-300"></span>
                     {service.label}
                   </a>
@@ -119,15 +119,15 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-electric mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-text-secondary">+91 88064 14646</span>
+                <span className="text-sm text-text-primary">+91 88064 14646</span>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-flame mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-text-secondary">ganeshsoni123@gmail.com</span>
+                <span className="text-sm text-text-primary">ganeshsoni123@gmail.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-magenta mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-text-secondary leading-relaxed">SGS Solutions, B2-601, Avon Vista, Balewadi, Pune</span>
+                <span className="text-sm text-text-primary leading-relaxed">SGS Solutions, B2-601, Avon Vista, Balewadi, Pune</span>
               </div>
             </div>
           </div>
@@ -137,10 +137,10 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-border">
         <div className="max-w-7xl mx-auto px-6 sm:px-16 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[11px] text-text-dim uppercase tracking-[0.15em]">
+          <p className="text-[11px] text-text-secondary uppercase tracking-[0.15em]">
             &copy; {currentYear} Ganesh Soni. All rights reserved.
           </p>
-          <p className="text-[11px] text-text-dim uppercase tracking-[0.15em]">
+          <p className="text-[11px] text-text-secondary uppercase tracking-[0.15em]">
             Crafted with <span className="text-flame">❤</span> for Impact
           </p>
         </div>
