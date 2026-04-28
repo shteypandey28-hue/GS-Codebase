@@ -119,7 +119,7 @@ export default function Home() {
               </a>
               <a
                 href="mailto:ganeshsoni123@gmail.com"
-                className="inline-flex items-center gap-3 px-8 py-4 rounded-full text-xs uppercase tracking-[0.15em] font-bold text-text-secondary border border-border hover:border-flame/40 hover:text-flame transition-all duration-300"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-full text-xs uppercase tracking-[0.15em] font-bold text-text-primary border-2 border-text-primary/20 hover:border-flame hover:text-flame transition-all duration-300"
               >
                 Get in Touch
               </a>
@@ -200,7 +200,7 @@ export default function Home() {
           className="flex gap-12 whitespace-nowrap px-8 items-center"
         >
           {[...marqueeItems, ...marqueeItems].map((name, i) => (
-            <span key={i} className="flex items-center gap-8 font-display text-xl text-text-dim hover:text-text-secondary transition-colors duration-500">
+            <span key={i} className="flex items-center gap-8 font-display text-xl text-text-secondary hover:text-text-primary transition-colors duration-500">
               {name}
               <Star className="w-3 h-3 text-flame/50" />
             </span>

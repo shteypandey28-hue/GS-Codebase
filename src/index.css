@@ -25,9 +25,9 @@
   --color-amber: #f59e0b;
 
   /* Light-mode text */
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #334155;
-  --color-text-dim: #64748b;
+  --color-text-primary: #0a0a0a;
+  --color-text-secondary: #1e293b;
+  --color-text-dim: #475569;
   --color-border: #e2e8f0;
   --color-border-light: #cbd5e1;
 }
