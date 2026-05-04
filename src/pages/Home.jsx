@@ -265,15 +265,35 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Academic + Industry */}
-            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group border border-border shadow-sm" style={{ background: 'linear-gradient(135deg, rgba(0,180,216,0.08), rgba(139,92,246,0.06))' }}>
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.15] blur-3xl group-hover:opacity-[0.25] transition-opacity duration-700" style={{ background: 'var(--color-electric)' }}></div>
-              <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">
-                Where Academia Meets Industry
-              </h3>
-              <p className="text-text-secondary text-lg leading-relaxed max-w-xl">
-                Bridging theoretical academia with rigorous industry execution. My frameworks are built on 15+ years of deep research and real-world deployment across top institutions and enterprises — delivering results that matter.
-              </p>
+            {/* Core Philosophy Pillars */}
+            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-8 md:p-10 flex flex-col justify-center relative overflow-hidden group border border-border shadow-sm bg-white">
+              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.08] blur-3xl group-hover:opacity-[0.15] transition-opacity duration-700" style={{ background: 'var(--color-electric)' }}></div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-electric/10 flex items-center justify-center text-electric mb-4">
+                    <Zap className="w-5 h-5" />
+                  </div>
+                  <h4 className="font-display font-bold text-lg text-text-primary mb-2">Innovate</h4>
+                  <p className="text-text-secondary text-sm leading-relaxed">Modernizing curriculums with cutting-edge AI and robust tech frameworks.</p>
+                </div>
+                
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-flame/10 flex items-center justify-center text-flame mb-4">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <h4 className="font-display font-bold text-lg text-text-primary mb-2">Inspire</h4>
+                  <p className="text-text-secondary text-sm leading-relaxed">Igniting passion in students through personalized, purpose-driven mentorship.</p>
+                </div>
+                
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-magenta/10 flex items-center justify-center text-magenta mb-4">
+                    <TrendingUp className="w-5 h-5" />
+                  </div>
+                  <h4 className="font-display font-bold text-lg text-text-primary mb-2">Impact</h4>
+                  <p className="text-text-secondary text-sm leading-relaxed">Delivering measurable growth and strategic execution across institutions.</p>
+                </div>
+              </div>
             </motion.div>
           </div>
         </motion.div>
