@@ -265,34 +265,32 @@ export default function Home() {
               </div>
             </motion.div>
 
-            {/* Core Philosophy Pillars */}
-            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-8 md:p-10 flex flex-col justify-center relative overflow-hidden group border border-border shadow-sm bg-white">
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.08] blur-3xl group-hover:opacity-[0.15] transition-opacity duration-700" style={{ background: 'var(--color-electric)' }}></div>
+            {/* The "Crazy" AI Core Card */}
+            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-0 flex flex-col items-center justify-center relative overflow-hidden group shadow-lg bg-[#050505] min-h-[300px]">
+              {/* Rotating Glowing Sphere */}
+              <motion.div 
+                animate={{ rotate: 360, scale: [1, 1.2, 1] }} 
+                transition={{ 
+                  rotate: { repeat: Infinity, duration: 15, ease: "linear" }, 
+                  scale: { repeat: Infinity, duration: 5, ease: "easeInOut" } 
+                }}
+                className="absolute inset-0 m-auto w-[150%] md:w-96 h-96 rounded-full blur-[80px] opacity-60" 
+                style={{ background: 'conic-gradient(from 0deg, var(--color-electric), var(--color-magenta), var(--color-flame), var(--color-electric))' }}
+              ></motion.div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-                <div>
-                  <div className="w-10 h-10 rounded-xl bg-electric/10 flex items-center justify-center text-electric mb-4">
-                    <Zap className="w-5 h-5" />
-                  </div>
-                  <h4 className="font-display font-bold text-lg text-text-primary mb-2">Innovate</h4>
-                  <p className="text-text-secondary text-sm leading-relaxed">Modernizing curriculums with cutting-edge AI and robust tech frameworks.</p>
+              {/* Noise / Grid overlay for texture */}
+              <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+
+              {/* Content */}
+              <div className="relative z-10 flex flex-col items-center text-center px-6 py-12">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-[10px] uppercase tracking-[0.3em] font-bold text-white/80 mb-6 group-hover:bg-white/10 transition-colors duration-500">
+                  <span className="w-1.5 h-1.5 rounded-full bg-lime animate-pulse"></span>
+                  Active AI Research
                 </div>
-                
-                <div>
-                  <div className="w-10 h-10 rounded-xl bg-flame/10 flex items-center justify-center text-flame mb-4">
-                    <Sparkles className="w-5 h-5" />
-                  </div>
-                  <h4 className="font-display font-bold text-lg text-text-primary mb-2">Inspire</h4>
-                  <p className="text-text-secondary text-sm leading-relaxed">Igniting passion in students through personalized, purpose-driven mentorship.</p>
-                </div>
-                
-                <div>
-                  <div className="w-10 h-10 rounded-xl bg-magenta/10 flex items-center justify-center text-magenta mb-4">
-                    <TrendingUp className="w-5 h-5" />
-                  </div>
-                  <h4 className="font-display font-bold text-lg text-text-primary mb-2">Impact</h4>
-                  <p className="text-text-secondary text-sm leading-relaxed">Delivering measurable growth and strategic execution across institutions.</p>
-                </div>
+                <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.15]">
+                  Human <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-magenta">Intelligence</span>.<br/>
+                  Scaled by <span className="text-transparent bg-clip-text bg-gradient-to-r from-flame to-magenta">AI</span>.
+                </h3>
               </div>
             </motion.div>
           </div>
