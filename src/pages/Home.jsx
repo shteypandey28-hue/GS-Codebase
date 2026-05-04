@@ -211,90 +211,63 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* ===================== ABOUT / PHILOSOPHY ===================== */}
-      <section id="about" className="py-24 md:py-32 px-6 sm:px-16 lg:px-24">
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerContainer}
-          className="max-w-7xl mx-auto"
-        >
-          <div className="mb-16 text-center flex flex-col items-center">
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs uppercase tracking-[0.2em] font-bold mb-6 text-text-secondary">
-              <Sparkles className="w-3.5 h-3.5 text-electric" />
-              My Philosophy
-            </motion.div>
-            <motion.h2 variants={fadeUp} className="font-display text-4xl lg:text-5xl font-bold text-text-primary">
-              The Architecture of{' '}
-              <span className="gradient-text-cool">Impact</span>
-            </motion.h2>
-          </div>
+      {/* ===================== THE "CRAZY" CINEMATIC IMPACT SECTION ===================== */}
+      <section id="about" className="relative bg-[#050505] py-32 md:py-48 overflow-hidden border-y border-border shadow-2xl">
+        {/* Massive Infinite Marquee Background */}
+        <div className="absolute inset-0 flex flex-col justify-center gap-16 opacity-[0.04] pointer-events-none overflow-hidden select-none">
+          <motion.div animate={{ x: [0, -2000] }} transition={{ repeat: Infinity, ease: "linear", duration: 50 }} className="whitespace-nowrap font-display font-black text-[12vw] leading-none text-white">
+            VISIONARY EDUCATOR • AI EVANGELIST • STRATEGIST • VISIONARY EDUCATOR •
+          </motion.div>
+          <motion.div animate={{ x: [-2000, 0] }} transition={{ repeat: Infinity, ease: "linear", duration: 40 }} className="whitespace-nowrap font-display font-black text-[12vw] leading-none text-white">
+            SHAPING FUTURES • DRIVING IMPACT • IGNITING MINDS • SHAPING FUTURES •
+          </motion.div>
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-5">
-            {/* Strategic Vision */}
-            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-10 md:p-12 flex flex-col justify-center relative overflow-hidden group border border-border shadow-sm" style={{ background: 'linear-gradient(135deg, rgba(255,107,53,0.12), rgba(233,30,140,0.08))' }}>
-              <div className="absolute top-0 right-0 w-64 h-64 rounded-full opacity-[0.15] blur-3xl group-hover:opacity-[0.25] transition-opacity duration-700" style={{ background: 'var(--color-flame)' }}></div>
-              <h3 className="font-display text-2xl md:text-3xl font-bold text-text-primary mb-4">Strategic Vision</h3>
-              <p className="text-text-secondary text-lg leading-relaxed max-w-xl">
-                I don't just solve today's challenges — I architect transformative systems for lasting impact. Whether it's integrating AI into academic curriculums or reshaping corporate training, every strategy is designed for sustainable growth and measurable outcomes.
-              </p>
-            </motion.div>
+        {/* Floating Glowing Orbs */}
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-electric/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-magenta/20 rounded-full blur-[120px] mix-blend-screen pointer-events-none"></div>
 
-            <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px] shadow-md">
-              <img
-                src="/images/speaking.jpg"
-                alt="Speaking"
-                className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-white">
-                Public Speaking
+        <div className="max-w-7xl mx-auto px-6 sm:px-16 lg:px-24 relative z-10">
+          <motion.div 
+            variants={fadeUp} 
+            initial="hidden" 
+            whileInView="show" 
+            viewport={{ once: true, margin: "-100px" }} 
+            className="flex flex-col items-center text-center"
+          >
+            {/* Center Glowing Icon */}
+            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-electric via-magenta to-flame flex items-center justify-center p-[2px] mb-12 shadow-[0_0_80px_rgba(233,30,140,0.4)]">
+              <div className="w-full h-full bg-[#050505] rounded-full flex items-center justify-center">
+                <BrainCircuit className="w-10 h-10 text-white" />
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeUp} className="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-2xl min-h-[250px] shadow-md">
-              <img
-                src="/images/mentorship.jpg"
-                alt="Mentorship"
-                className="absolute w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 font-display font-bold text-lg text-white">
-                Mentorship
-              </div>
-            </motion.div>
+            <h2 className="font-display text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-8 tracking-tight max-w-5xl leading-[1.05]">
+              I don't just teach the future. <br className="hidden md:block"/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric via-magenta to-flame">I architect it.</span>
+            </h2>
 
-            {/* The "Crazy" AI Core Card */}
-            <motion.div variants={fadeUp} className="md:col-span-2 md:row-span-1 rounded-2xl p-0 flex flex-col items-center justify-center relative overflow-hidden group shadow-lg bg-[#050505] min-h-[300px]">
-              {/* Rotating Glowing Sphere */}
-              <motion.div 
-                animate={{ rotate: 360, scale: [1, 1.2, 1] }} 
-                transition={{ 
-                  rotate: { repeat: Infinity, duration: 15, ease: "linear" }, 
-                  scale: { repeat: Infinity, duration: 5, ease: "easeInOut" } 
-                }}
-                className="absolute inset-0 m-auto w-[150%] md:w-96 h-96 rounded-full blur-[80px] opacity-60" 
-                style={{ background: 'conic-gradient(from 0deg, var(--color-electric), var(--color-magenta), var(--color-flame), var(--color-electric))' }}
-              ></motion.div>
-              
-              {/* Noise / Grid overlay for texture */}
-              <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+            <p className="text-xl md:text-2xl text-white/50 max-w-3xl font-light leading-relaxed mb-20">
+              Bridging theoretical academia with rigorous industry execution. Transforming curriculums, scaling corporate growth, and mentoring the next generation of global leaders.
+            </p>
 
-              {/* Content */}
-              <div className="relative z-10 flex flex-col items-center text-center px-6 py-12">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-[10px] uppercase tracking-[0.3em] font-bold text-white/80 mb-6 group-hover:bg-white/10 transition-colors duration-500">
-                  <span className="w-1.5 h-1.5 rounded-full bg-lime animate-pulse"></span>
-                  Active AI Research
+            {/* Glassmorphism Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-5xl">
+              {[
+                { label: 'Strategic Vision', value: '100%' },
+                { label: 'Global Reach', value: 'Global' },
+                { label: 'AI Integration', value: 'Native' },
+                { label: 'Mentorship', value: '1:1' }
+              ].map((item, i) => (
+                <div key={i} className="flex flex-col items-center p-8 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 hover:-translate-y-2 transition-all duration-500 cursor-default">
+                  <div className="text-transparent bg-clip-text bg-gradient-to-br from-white to-white/40 text-4xl font-bold font-display mb-3">{item.value}</div>
+                  <div className="text-xs uppercase tracking-[0.2em] text-white/60 font-semibold">{item.label}</div>
                 </div>
-                <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.15]">
-                  Human <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-magenta">Intelligence</span>.<br/>
-                  Scaled by <span className="text-transparent bg-clip-text bg-gradient-to-r from-flame to-magenta">AI</span>.
-                </h3>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
+              ))}
+            </div>
+
+          </motion.div>
+        </div>
       </section>
 
       {/* ===================== SERVICES GRID ===================== */}
